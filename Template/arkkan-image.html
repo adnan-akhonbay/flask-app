@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render Images</title>
+</head>
+<body>
+    <img src="{{url_for('static',filename='/screenshots/'+context.imagename)}}" style="margin-left: auto;margin-right: auto;" alt="context.staticimagefile" width="1200" height="1500">
+
+
+    <div style="font-size: 180%;margin-left: auto;margin-right: auto;width: 16em">
+        <p dir="rtl">
+
+            <span><strong>تاريخ اليوم: </span><span>{{context.today}}</span></strong><br>
+            <span><strong>الاسم: </strong></span><span>{{context.txt0}}</span><br>
+            <span><strong>رقم الهوية: </strong></span><span>{{context.txt1}}</span><br>
+            <span><strong>رقم الطلب: </strong></span><span>{{context.txt2}}</span><br>
+            <span><strong>رقم الفاتورة: </strong></span><span>{{context.txt3}}</span> <br>
+            <span><strong>تاريخ الفاتورة: </strong></span><span>{{context.txt4}}</span> <br>
+            <span><strong>حالة الفاتورة: </strong></span><span>{{context.txt5}}</span> <br>
+            <span><strong>اسم المركز الطبي: </strong></span><span>{{context.txt6}}</span> <br>
+            <span><strong>رقم الكشف الطبي: </strong></span><span>{{context.txt7}}</span> <br>
+            <span><strong>رقم الشهادة الصحية: </strong></span><span>{{context.txt8}}</span> <br>
+            <span><strong>نوع الشهادة الصحية: </strong></span><span>{{context.txt9}}</span> <br>
+            <span><strong>تكلفة الرسوم الاجمالية: </strong></span><span>{{context.txt10}}</span> <br>
+            <span><strong>حالة الطلب: </strong></span><span>{{context.txt11}}</span> <br>
+            <span><strong> فرق الايام : </strong></span><span>{{context.expirationdate}}</span> <br>
+            <sup dir="rtl"><i>فرق الايام   =   تاريخ اليوم   -   تاريخ الفاتورة في بلدي   </i></sup>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Udawi Inqueries</title>
+</head>
+<body>
+    <p style="font-size:.90em; background-color:powderblue;">
+        <h1 class="lead"><u>Upload Excel File (.xlsx)</u><small class="text-muted"> - Arkkan Images</small></h1>
+        <form action="/arkkan-images" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="btn"
+                accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+            <input type="submit" value="Upload" class="btn btn-dark">
+        </form>
+    </p>
+
+    <p style="font-size:.60em;background-color:powderblue;">
+        <h1 class="lead"><u>Upload Excel File (.xlsx)</u><small class="text-muted"> - Arkkan Attendance and Exams</small></h1>
+        <form action="/attendance-and-exams" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="btn"
+                accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+            <input type="submit" value="Upload" class="btn btn-dark">
+        </form>
+    </p>
+
+</body>
+<script>
+    $(document).ready(function(){
+      $("input").click(function(){
+        $("p").css("background-color", "yellow");
+      });
+    });
+</script>
+</html>
